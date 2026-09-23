@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,95 +7,86 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Darryl Bruce's personal webpage</title>
-
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Darryl Bruce | ITIS3135</title>
 
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #ffffff;
             color: #4a3b00;
-            margin: 0;
             line-height: 1.6;
         }
 
-        h1,
-        h2 {
-            font-family: Georgia, "Times New Roman", serif;
+        header,
+        main,
+        footer {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
         }
 
         header {
             text-align: center;
             background-color: #d4af37;
             color: #ffffff;
-            max-width: 900px;
-            margin: 0 auto 40px auto;
-            padding: 20px;
-            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 0 0 8px 8px;
         }
 
-        header h1,
-        header p {
+        header h1 {
             color: #ffffff;
         }
 
-        main,
-        footer {
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #fff8dc;
+        }
+
+        main {
+            min-height: 400px;
             background-color: #ffffff;
             border: 3px solid #d4af37;
             border-radius: 8px;
+            margin-top: 40px;
+            margin-bottom: 40px;
             box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-            max-width: 900px;
-            margin: 0 auto 40px auto;
-            padding: 20px;
         }
 
         main h2 {
             color: #b8860b;
-            margin-top: 25px;
         }
 
-        main h3 {
-            color: #8b6f00;
+        main a {
+            color: #b8860b;
+            font-weight: bold;
         }
 
-        figure {
-            text-align: left;
-            margin: 20px 0;
-        }
-
-        figure img {
-            max-width: 200px;
-            height: auto;
-            display: block;
-            border: 3px solid #d4af37;
-            border-radius: 4px;
-        }
-
-        .tagline {
-            font-style: italic;
-            color: #8b6f00;
+        main a:hover {
+            color: #d4af37;
         }
 
         footer {
             text-align: center;
-        }
-
-        footer nav a {
-            margin: 0 10px;
-            color: #b8860b;
-            font-weight: bold;
-            text-decoration: underline;
-        }
-
-        footer nav a:hover {
-            color: #d4af37;
+            background-color: #d4af37;
+            color: #ffffff;
+            border-radius: 8px 8px 0 0;
         }
 
         footer p {
-            margin-top: 15px;
-            color: #4a3b00;
+            margin: 10px 0;
         }
 
         @media (max-width: 600px) {
@@ -105,16 +96,16 @@
                 padding: 15px;
             }
 
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
             header h1 {
-                font-size: 1.4em;
+                font-size: 1.5em;
             }
         }
     </style>
-
-    <script
-        src="https://divonbriesen.github.io/teaching/tools/standards-check.js"
-        defer>
-    </script>
 
     <script
         src="https://lint.page/kit/4d0fe3.js"
@@ -125,47 +116,39 @@
 <body>
 
     <header>
-        <h1>Darryl Bruce's personal page</h1>
+        <h1>Darryl Bruce | ITIS3135</h1>
 
-        <p>
-            Welcome to my personal webpage! Here you can learn more about me,
-            my interests, and my journey in the world of web development.
-        </p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="contract.html">Contract</a>
+        </nav>
     </header>
 
     <main>
         <h2>Home</h2>
 
-        <h3>Bonjour</h3>
-
         <p>
-            Hello and welcome! I'm glad to have you here.
-            This is my class personal page.
+            Welcome to my ITIS 3135 course website!
         </p>
 
-        <h2>Things about me</h2>
+        <p>
+            This website contains information about my work and progress
+            in ITIS 3135, Front-End Web Application Development.
+        </p>
 
-        <ul>
-            <li>
-                I lived in France for 6 years, so I'm quite fluent in French.
-            </li>
-
-            <li>
-                I love listening to music; it's my favorite form of therapy.
-            </li>
-        </ul>
+        <p>
+            <a href="about.html">Learn more about me</a>
+        </p>
     </main>
 
     <footer>
-        <nav>
-            <a href="itis3135/">Link to my course page</a>
-        </nav>
+        <p>Site Designed by Darryl Bruce © 2026</p>
 
-        <p class="tagline">
-            "Hoping that all this work is worth it"
-        </p>
-
-        <p>Darryl Bruce 2026</p>
+        <script
+            src="https://divonbriesen.github.io/teaching/tools/standards-check.js"
+            defer>
+        </script>
     </footer>
 
 </body>
